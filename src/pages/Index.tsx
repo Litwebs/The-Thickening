@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { MessageCircle, ShieldCheck, Truck, Leaf, Sparkles } from "lucide-react";
+import {
+  MessageCircle,
+  ShieldCheck,
+  Truck,
+  Leaf,
+  Sparkles,
+} from "lucide-react";
 import heroImage from "@/assets/hero-vitamins.jpg";
 import { enquireLink, products } from "@/lib/site";
 
@@ -15,14 +21,20 @@ const Index = () => {
               <Sparkles className="h-3.5 w-3.5" /> UK-Based Wellness Store
             </span>
             <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              Premium Vitamins<br />& Wellness Products
+              Premium Vitamins
+              <br />& Wellness Products
             </h1>
             <p className="max-w-lg text-lg leading-relaxed text-muted-foreground">
-              Quality supplements available from Ykk Trading. Message us on WhatsApp to enquire — fast, friendly, no hassle.
+              Quality supplements available from THE THICKENING LTD. Message us
+              on WhatsApp to enquire — fast, friendly, no hassle.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button asChild variant="whatsapp" size="lg">
-                <a href={enquireLink()} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={enquireLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <MessageCircle className="h-5 w-5" /> Enquire on WhatsApp
                 </a>
               </Button>
@@ -31,16 +43,22 @@ const Index = () => {
               </Button>
             </div>
             <div className="flex flex-wrap gap-6 pt-4 text-sm text-muted-foreground">
-              <div className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-primary" /> Trusted quality</div>
-              <div className="flex items-center gap-2"><Truck className="h-4 w-4 text-primary" /> UK-based</div>
-              <div className="flex items-center gap-2"><Leaf className="h-4 w-4 text-primary" /> Affordable</div>
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="h-4 w-4 text-primary" /> Trusted quality
+              </div>
+              <div className="flex items-center gap-2">
+                <Truck className="h-4 w-4 text-primary" /> UK-based
+              </div>
+              <div className="flex items-center gap-2">
+                <Leaf className="h-4 w-4 text-primary" /> Affordable
+              </div>
             </div>
           </div>
           <div className="relative">
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-primary/20 blur-3xl" />
             <img
               src={heroImage}
-              alt="Premium vitamin supplements from Ykk Trading"
+              alt="Premium vitamin supplements from THE THICKENING LTD"
               width={1536}
               height={1024}
               className="relative w-full rounded-3xl object-cover shadow-elegant"
@@ -51,8 +69,13 @@ const Index = () => {
 
       <section className="container py-20 lg:py-28">
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">Featured Products</h2>
-          <p className="mt-3 text-muted-foreground">A taste of our wellness essentials. View the full range on the products page.</p>
+          <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+            Featured Products
+          </h2>
+          <p className="mt-3 text-muted-foreground">
+            A taste of our wellness essentials. View the full range on the
+            products page.
+          </p>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {featured.map((p) => (
@@ -66,17 +89,34 @@ const Index = () => {
                     {p.tag}
                   </span>
                 )}
-                <img src={p.image} alt={p.name} loading="lazy" width={512} height={512} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                <img
+                  src={p.image}
+                  alt={p.name}
+                  loading="lazy"
+                  width={512}
+                  height={512}
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
               <div className="flex flex-1 flex-col gap-3 p-5">
                 <div>
-                  <h3 className="font-display font-semibold leading-tight">{p.name}</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{p.description}</p>
+                  <h3 className="font-display font-semibold leading-tight">
+                    {p.name}
+                  </h3>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    {p.description}
+                  </p>
                 </div>
                 <div className="mt-auto flex items-center justify-between gap-3 pt-2">
-                  <span className="font-display text-2xl font-bold">£{p.price}</span>
+                  <span className="font-display text-2xl font-bold">
+                    £{p.price}
+                  </span>
                   <Button asChild variant="whatsapp" size="sm">
-                    <a href={enquireLink(p.name)} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={enquireLink(p.name)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <MessageCircle className="h-4 w-4" /> Enquire
                     </a>
                   </Button>

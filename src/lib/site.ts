@@ -16,11 +16,11 @@ import biotinImg from "@/assets/products/biotin.png";
 
 export const WHATSAPP_NUMBER = "447956736032";
 export const WHATSAPP_DISPLAY = "07956736032";
-export const EMAIL = "Ykktrading@outlook.com";
+export const EMAIL = "thethickeningltd@outlook.com";
 
 export const enquireLink = (product?: string) =>
   product
-    ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi Ykk Trading, I am interested in ${product}`)}`
+    ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi The Thickening, I am interested in ${product}`)}`
     : `https://wa.me/${WHATSAPP_NUMBER}`;
 
 export type Product = {

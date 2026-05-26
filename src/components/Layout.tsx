@@ -22,7 +22,7 @@ const Layout = () => {
               <Leaf className="h-5 w-5" />
             </div>
             <span className="font-display text-lg font-bold tracking-tight">
-              Ykk Trading
+              THE THICKENING LTD
             </span>
           </Link>
           <nav className="hidden items-center gap-8 md:flex">
@@ -74,7 +74,10 @@ const Layout = () => {
 
       <footer className="border-t border-border bg-secondary/30 py-8">
         <div className="container flex flex-col items-center justify-between gap-3 text-sm text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} Ykk Trading. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} THE THICKENING LTD. All rights
+            reserved.
+          </p>
           <p>UK-based vitamins & wellness store.</p>
         </div>
       </footer>
